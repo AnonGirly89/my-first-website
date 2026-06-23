@@ -6,7 +6,7 @@
 
   <meta
     name="description"
-    content="Mein erstes Website-Projekt mit HTML, CSS und JavaScript."
+    content="Das erste Website-Projekt von Kimberly Vale mit HTML, CSS und JavaScript."
   >
   <meta name="author" content="Kimberly Vale">
 
@@ -18,64 +18,114 @@
 <body>
 
   <main class="hero">
-    <div class="content">
 
-      <p class="label">Welcome</p>
+    <article class="content">
 
-      <h1>Kimberly Vale</h1>
+      <header class="page-header">
 
-      <h2>My First Website Project</h2>
+        <p class="label">Welcome</p>
 
-      <p class="intro">
-        Willkommen auf meinem ersten eigenen Website-Projekt.
-        Hier sammle ich als Anfängerin erste praktische Erfahrungen
-        mit moderner Webentwicklung.
-      </p>
+        <h1>Kimberly Vale</h1>
 
-      <section class="project-info" aria-labelledby="projectTitle">
-        <h3 id="projectTitle">Über dieses Projekt</h3>
+        <h2>My First Website Project</h2>
+
+        <p class="intro">
+          Willkommen auf meinem ersten eigenen Website-Projekt.
+          Als Anfängerin sammle ich hier erste praktische Erfahrungen
+          mit moderner Webentwicklung.
+        </p>
+
+      </header>
+
+      <div class="content-sections">
+
+        <section
+          class="project-info"
+          aria-labelledby="project-title"
+        >
+
+          <h3 id="project-title">
+            Über dieses Projekt
+          </h3>
+
+          <p>
+            Diese Website wurde mit HTML, CSS und JavaScript erstellt.
+            Sie dient mir als Grundlage, um neue Funktionen auszuprobieren
+            und meine Kenntnisse Schritt für Schritt zu erweitern.
+          </p>
+
+        </section>
+
+        <section
+          class="technologies"
+          aria-labelledby="technology-title"
+        >
+
+          <h3 id="technology-title">
+            Verwendete Technologien
+          </h3>
+
+          <div class="technology-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+
+        </section>
+
+      </div>
+
+      <section
+        class="interaction"
+        aria-labelledby="interaction-title"
+      >
+
+        <h3 id="interaction-title">
+          Kleine Interaktion
+        </h3>
 
         <p>
-          Diese kleine Website wurde mit HTML, CSS und JavaScript erstellt.
-          Sie dient mir als Grundlage, um neue Funktionen auszuprobieren
-          und meine Kenntnisse Schritt für Schritt zu erweitern.
+          Klicke auf den Button, um eine Nachricht anzuzeigen.
         </p>
+
+        <button
+          id="welcomeButton"
+          type="button"
+        >
+          Click me
+        </button>
+
+        <p
+          id="message"
+          class="message"
+          aria-live="polite"
+        ></p>
+
       </section>
 
-      <section class="technologies" aria-labelledby="technologyTitle">
-        <h3 id="technologyTitle">Verwendete Technologien</h3>
+      <div class="status-area">
 
-        <div class="technology-list">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-        </div>
-      </section>
+        <p class="project-status">
+          Projektstatus: In Entwicklung
+        </p>
 
-      <button id="welcomeButton" type="button">
-        Click me
-      </button>
+      </div>
 
-      <p
-        id="message"
-        class="message"
-        aria-live="polite"
-      ></p>
+    </article>
 
-      <p class="project-status">
-        Projektstatus: In Entwicklung
-      </p>
-
-    </div>
   </main>
 
   <footer>
+
     <p>
-      &copy; 2026 Kimberly Vale |
+      &copy; 2026 Kimberly Vale
+      <span aria-hidden="true">|</span>
       Stand: 23.06.2026
     </p>
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
